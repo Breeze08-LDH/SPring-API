@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+/* GitHub 테스트*/
+
 @RestController
 @RequestMapping(value = "/api/item-api")
 public class ItemController {
