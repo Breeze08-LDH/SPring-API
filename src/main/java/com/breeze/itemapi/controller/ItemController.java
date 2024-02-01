@@ -20,7 +20,6 @@ public class ItemController {
         this.itemService = itemService;
     }
 
-
     // http://localhost:8080/api/item-api/item/{itemId}
     @GetMapping(value = "/item/{itemId}")
     public ItemDTO getItem(@PathVariable(name = "itemId") String itemId) {
