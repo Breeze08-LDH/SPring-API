@@ -6,11 +6,18 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
+/*
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 @Builder
+*/
+
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+//@NoArgsConstructor(access = AccessLevel.PROTECTED) // 리팩토링 1. protected 접근 제어자로 생성자의 접근 제어
 public class ItemDTO {
 
     @NotNull
